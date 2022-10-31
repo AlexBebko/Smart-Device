@@ -1,4 +1,4 @@
-.wrapper {
+.page-wrapper {
   position: relative;
 
   display: flex;
@@ -7,22 +7,14 @@
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 
-  .header,
-  .footer {
+  .main-header,
+  .main-footer {
     flex-shrink: 0;
   }
 
   main {
     flex-grow: 1;
   }
-}
-
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
 }
 
 .visually-hidden {

@@ -1,0 +1,33 @@
+.socials__list {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  grid-template-rows: 40px;
+  gap: 15px;
+  list-style: none;
+}
+
+.socials__link {
+  fill: $color-bg-alice-blue;
+  color: inherit;
+
+  &:hover {
+    fill: $color-deep-sky-blue;
+  }
+
+  &:focus,
+  &:focus-within {
+    fill: $color-deep-sky-blue;
+
+    outline: none;
+  }
+
+  &:active {
+    fill: $color-deep-sky-blue-active;
+  }
+}
+
+.socials__link svg {
+  fill: inherit;
+}

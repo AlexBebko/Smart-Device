@@ -1,0 +1,150 @@
+.main-header {
+  background: $black-pearl-down;
+  position: fixed;
+  width: 100%;
+}
+
+.main-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1160px;
+  min-height: 120px;
+  margin: 0 auto;
+}
+
+.main-header__contacts-list {
+  max-width: 685px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.main-header__contacts-item {
+  font-family: $ff-pt-mono;
+  list-style: none;
+  margin-left: 30px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.main-header__contacts-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: $color-alice-blue;
+  font-size: 16px;
+  line-height: 18px;
+  fill: $color-deep-sky-blue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:hover {
+    color: $color-deep-sky-blue;
+  }
+
+  &:focus,
+  &:focus-within {
+    color: $color-deep-sky-blue;
+
+    outline: none;
+  }
+
+  &:active {
+    fill: $color-deep-sky-blue-active;
+    color: $color-deep-sky-blue-active;
+  }
+}
+
+.main-header__contacts-link svg {
+  margin-right: 15px;
+  fill: inherit;
+}
+
+.main-header__button {
+  max-width: 220px;
+  padding: 10px 15px;
+  color: $color-alice-blue;
+  background-color: transparent;
+  border-color: $color-alice-blue;
+
+  &:hover {
+    background-color: $color-deep-sky-blue;
+    border-color: transparent;
+  }
+
+  &:focus,
+  &:focus-within {
+    background-color: $color-deep-sky-blue;
+    border-color: transparent;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-deep-sky-blue-active;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .main-header {
+    position: static;
+  }
+
+  .main-header__wrapper {
+    width: 84%;
+    max-width: 650px;
+    min-height: 100px;
+  }
+
+  .main-header__contacts-list {
+    max-width: 285px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .main-header__contacts-item {
+    margin-left: 20px;
+  }
+
+  .main-header__contacts-link {
+    padding: 10px;
+  }
+
+  .main-header__contacts-link svg {
+    margin: 0;
+  }
+
+  .main-header__contacts-link span {
+    display: none;
+  }
+
+  .main-header__button {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .main-header__wrapper {
+    width: 81%;
+    max-width: 400px;
+    min-height: 70px;
+  }
+
+  .main-header__contacts-list {
+    max-width: 185px;
+  }
+
+  .main-header__logo img {
+    width: 35px;
+    height: 35px;
+  }
+}

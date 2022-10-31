@@ -1,0 +1,36 @@
+.footer-contacts__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-contacts__item {
+  width: 345px;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-contacts__link {
+  font-family: $ff-pt-mono;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-opacity-white;
+
+  &:hover {
+    color: $color-deep-sky-blue;
+  }
+
+  &:focus,
+  &:focus-within {
+    color: $color-deep-sky-blue;
+
+    outline: none;
+  }
+
+  &:active {
+    color: $color-deep-sky-blue-active;
+  }
+}
