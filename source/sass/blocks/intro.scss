@@ -1,0 +1,44 @@
+.intro {
+  background: $black-down,
+    url("../img/background-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro__wrapper {
+  min-height: 880px;
+  padding-top: 305px;
+  margin-left: 25%;
+}
+
+.intro__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-alice-blue;
+}
+
+.intro__text {
+  max-width: 685px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  font-family: $ff-pt-mono;
+  font-size: 22px;
+  line-height: 155%;
+  color: $color-alice-blue;
+}
+
+.intro__button {
+  background-color: $color-deep-sky-blue;
+  color: $color-alice-blue;
+  letter-spacing: 0.05em;
+  padding: 15px 25px;
+  border: none;
+}

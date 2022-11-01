@@ -5,7 +5,6 @@
 }
 
 .footer-contacts__item {
-  width: 345px;
   margin-bottom: 10px;
 
   &:last-child {
@@ -16,8 +15,12 @@
 .footer-contacts__link {
   font-family: $ff-pt-mono;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 135%;
   color: $color-opacity-white;
+
+  &--tel {
+    line-height: 25px;
+  }
 
   &:hover {
     color: $color-deep-sky-blue;
@@ -32,5 +35,11 @@
 
   &:active {
     color: $color-deep-sky-blue-active;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .footer-contacts__link {
+    font-size: 14px;
   }
 }
