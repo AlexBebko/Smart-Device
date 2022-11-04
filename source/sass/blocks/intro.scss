@@ -1,6 +1,6 @@
 .intro {
-  background: $black-down,
-    url("../img/background-image.jpg");
+  background: url("../img/background-image.jpg");
+  background-color: $color-black-pearl;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -8,7 +8,13 @@
 .intro__wrapper {
   min-height: 880px;
   padding-top: 305px;
-  margin-left: 25%;
+  max-width: 1220px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+
+.intro__container {
+  margin-left: 125px;
 }
 
 .intro__title {
@@ -36,9 +42,110 @@
 }
 
 .intro__button {
+  display: inline-block;
   background-color: $color-deep-sky-blue;
   color: $color-alice-blue;
+  font-size: 18px;
+  line-height: 21px;
   letter-spacing: 0.05em;
   padding: 15px 25px;
-  border: none;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: $color-alice-blue;
+    color: $color-deep-sky-blue;
+    border: 1px solid $color-deep-sky-blue;
+  }
+
+  &:focus,
+  &:focus-within {
+    background-color: $color-alice-blue;
+    color: $color-deep-sky-blue;
+    border: 1px solid $color-deep-sky-blue;
+
+    outline: none;
+  }
+
+  &:active {
+    color: $color-deep-sky-blue-active;
+  }
+
+  .intro__button-text-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .intro {
+    background: url("../img/background-image-tablet.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .intro__wrapper {
+    min-height: 640px;
+    padding-top: 180px;
+    max-width: 670px;
+    margin-bottom: 80px;
+  }
+
+  .intro__container {
+    margin: 0;
+  }
+
+  .intro__title {
+    margin-bottom: 20px;
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 0.07em;
+  }
+
+  .intro__text {
+    margin-bottom: 50px;
+  }
+
+  .intro__button {
+    margin-left: 45px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .intro {
+    background: url("../img/background-image-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .intro__wrapper {
+    min-height: 560px;
+    padding-top: 150px;
+    width: 84vw;
+    margin-bottom: 50px;
+  }
+
+  .intro__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .intro__text {
+    width: 270px;
+    font-size: 14px;
+  }
+
+  .intro__button {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 30px;
+  }
+
+  .intro__button-text {
+    display: none;
+  }
+
+  .intro__button .intro__button-text-mobile {
+    display: inline;
+  }
 }

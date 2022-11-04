@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   width: 80%;
-  max-width: 1160px;
+  max-width: 1220px;
   min-height: 120px;
   margin: 0 auto;
 }
@@ -94,11 +94,11 @@
 
 @media (max-width: $tablet-max-width) {
   .main-header {
-    position: static;
+    position: absolute;
   }
 
   .main-header__wrapper {
-    width: 84%;
+    width: 84vw;
     max-width: 650px;
     min-height: 100px;
   }
@@ -135,8 +135,7 @@
 
 @media (max-width: $mobile-max-width) {
   .main-header__wrapper {
-    width: 81%;
-    max-width: 400px;
+    width: 84vw;
     min-height: 70px;
   }
 
