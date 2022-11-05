@@ -1,0 +1,110 @@
+.about__wrapper {
+  width: 80%;
+  max-width: 1220px;
+  min-height: 320px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-left: 250px;
+  background-image: url("../../img/year.png");
+  background-repeat: no-repeat;
+  background-size: 150px 320px;
+  background-position: left top;
+}
+
+.about__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-black-pearl;
+}
+
+.about__text-wrapper {
+  padding-bottom: 20px;
+}
+
+.about__text p {
+  margin-bottom: 22px;
+  font-family: $ff-pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-black-pearl;
+}
+
+.about__text.is-closed {
+  display: none;
+}
+
+.about__button {
+  min-width: 180px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background-color: transparent;
+  border: 1px solid $color-deep-sky-blue;
+  border-radius: 3px;
+  color: $color-deep-sky-blue;
+  text-transform: uppercase;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-deep-sky-blue;
+    border-color: transparent;
+    color: $color-alice-blue;
+  }
+
+  &:focus,
+  &:focus-within {
+    background-color: $color-deep-sky-blue;
+    border-color: transparent;
+    color: $color-alice-blue;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-deep-sky-blue-active;
+  }
+}
+
+@media (max-width: $tablet-max-width) {
+  .about__wrapper {
+    width: 670px;
+    margin-bottom: 80px;
+    padding-left: 175px;
+  }
+
+  .about__text p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .about__wrapper {
+    width: 84vw;
+    padding: 0;
+    background-image: none;
+  }
+
+  .about__title {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about__text p {
+    margin-bottom: 19px;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-black-pearl;
+  }
+
+  .about__text span {
+    display: none;
+  }
+}

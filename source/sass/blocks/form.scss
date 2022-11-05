@@ -1,0 +1,77 @@
+.form {
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  margin-bottom: 20px;
+}
+
+.form__field {
+  width: 100%;
+}
+
+.form__field label {
+  display: none;
+}
+
+.form__field input,
+.form__field textarea {
+  background-color: $color-black-pearl-input;
+  border-radius: 3px;
+  font-family: $ff-pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  padding: 15px;
+  border: none;
+  width: 100%;
+}
+
+.form__field textarea {
+  max-height: 155px;
+  margin-bottom: 35px;
+}
+
+.form__field input::placeholder,
+.form__field textarea::placeholder {
+  font-family: $ff-pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+}
+
+.form__button-wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.form button {
+  width: 50%;
+  margin: 0;
+  padding: 15px 25px;
+  margin-right: 50px;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: $color-black-pearl;
+  color: $color-default-white;
+}
+
+.form__field-checkbox input {
+  display: none;
+}
+
+.form__field-checkbox label {
+  display: block;
+  padding-left: 26px;
+  color: $color-default-white;
+}
+

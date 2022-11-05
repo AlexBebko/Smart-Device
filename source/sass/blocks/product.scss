@@ -1,0 +1,133 @@
+.product {
+  height: 650px;
+}
+
+.product__link {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 40px;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $color-deep-sky-blue-active;
+
+  &--production {
+    background-image: url("../img/product-card-1.jpg");
+  }
+
+  &--mounting {
+    background-image: url("../img/product-card-2.jpg");
+  }
+
+  &--accessories {
+    background-image: url("../img/product-card-3.jpg");
+  }
+
+  &:hover {
+    width: 105%;
+    height: 105%;
+    margin-left: -2.5%;
+    margin-top: -5%;
+  }
+}
+
+.product__text {
+  margin: 0;
+  padding: 0;
+  max-width: 189px;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: $color-default-white;
+}
+
+.product__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $color-deep-sky-blue;
+  border-top-left-radius: 3px;
+}
+
+.product__link:hover .product__button {
+  background-color: $color-alice-blue;
+}
+
+.product__button-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  stroke: $color-default-white;
+}
+
+.product__link:hover .product__button-icon {
+  stroke: $color-deep-sky-blue;
+}
+
+@media (max-width: $tablet-max-width) {
+  .product {
+    height: 100%;
+  }
+
+  .product__link {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--production {
+      background-image: url("../img/product-card-1-tablet.jpg");
+    }
+
+    &--mounting {
+      background-image: url("../img/product-card-2-tablet.jpg");
+    }
+
+    &--accessories {
+      background-image: url("../img/product-card-3-tablet.jpg");
+    }
+  }
+
+  .product__text {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .product__link {
+    padding-top: 30px;
+    padding-left: 30px;
+
+    &--production {
+      background-image: url("../img/product-card-1-mobile.jpg");
+    }
+
+    &--mounting {
+      background-image: url("../img/product-card-2-mobile.jpg");
+    }
+
+    &--accessories {
+      background-image: url("../img/product-card-3-mobile.jpg");
+    }
+  }
+
+  .product__text {
+    font-size: 18px;
+  }
+
+  .product__button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .product__button-icon {
+    width: 2.5px;
+    height: 5px;
+  }
+}

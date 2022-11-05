@@ -1,0 +1,35 @@
+.feedback {
+  background: linear-gradient(135deg, rgba(4, 24, 39, 0.5) 25%, $color-deep-sky-blue 25%);
+  // background-repeat: no-repeat;
+  // background-size: 100% 100%, 100% 100%;
+  background-color: $color-deep-sky-blue;
+  // clip-path: polygon(0 0, 0 100%, 50% 0);
+  // background-size: 50% 100%;
+}
+
+.feedback__wrapper {
+  min-height: 840px;
+  padding-left: 50%;
+  padding-top: 170px;
+}
+
+.feedback__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-family: $ff-roboto;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+}
+
+.feedback__text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  font-family: $ff-pt-mono;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+}
