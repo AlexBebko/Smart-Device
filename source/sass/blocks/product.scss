@@ -31,6 +31,21 @@
     height: 105%;
     margin-left: -2.5%;
     margin-top: -5%;
+    filter: drop-shadow(0 0 10px $color-deep-sky-blue-active);
+  }
+
+  &:focus,
+  &:focus-within {
+    width: 105%;
+    height: 105%;
+    margin-left: -2.5%;
+    margin-top: -5%;
+    filter: drop-shadow(0 0 10px $color-deep-sky-blue-active);
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }
 
@@ -57,7 +72,12 @@
 }
 
 .product__link:hover .product__button {
-  background-color: $color-alice-blue;
+  background-color: $color-deep-sky-blue-active;
+}
+
+.product__link:focus .product__button,
+.product__link:focus-within .product__button {
+  background-color: $color-deep-sky-blue-active;
 }
 
 .product__button-icon {
@@ -66,10 +86,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   stroke: $color-default-white;
-}
-
-.product__link:hover .product__button-icon {
-  stroke: $color-deep-sky-blue;
 }
 
 @media (max-width: $tablet-max-width) {

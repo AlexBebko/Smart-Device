@@ -1,16 +1,22 @@
 .feedback {
-  background: linear-gradient(135deg, rgba(4, 24, 39, 0.5) 25%, $color-deep-sky-blue 25%);
-  // background-repeat: no-repeat;
-  // background-size: 100% 100%, 100% 100%;
   background-color: $color-deep-sky-blue;
-  // clip-path: polygon(0 0, 0 100%, 50% 0);
-  // background-size: 50% 100%;
+}
+
+.feedback__container {
+  margin: 0;
+  padding: 0;
+  background-image: url("../../img/paper-airplane.png"),
+    url("../../img/polygon.svg");
+  background-position: 15% 50%, 0 0;
+  background-size: 510px 285px, 50%;
+  background-repeat: no-repeat;
 }
 
 .feedback__wrapper {
   min-height: 840px;
-  padding-left: 50%;
+  margin-left: 50vw;
   padding-top: 170px;
+  padding-bottom: 250px;
 }
 
 .feedback__title {
@@ -32,4 +38,52 @@
   font-size: 16px;
   line-height: 22px;
   color: $color-default-white;
+}
+
+@media (max-width: $tablet-max-width) {
+  .feedback__container {
+    background-image: none;
+  }
+
+  .feedback__wrapper {
+    width: 84vw;
+    max-width: 670px;
+    min-height: 580px;
+    padding-top: 50px;
+    padding-bottom: 125px;
+    margin: 0 auto;
+  }
+
+  .feedback__title {
+    margin-bottom: 10px;
+  }
+
+  .feedback__text {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .feedback {
+    border-bottom: 15px solid $color-bg-white;
+  }
+
+  .feedback__wrapper {
+    width: 84vw;
+    min-height: 750px;
+    padding-bottom: 90px;
+  }
+
+  .feedback__title {
+    max-width: 270px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .feedback__text {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
