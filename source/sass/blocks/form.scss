@@ -76,7 +76,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 48px;
-  align-items: center;
 }
 
 .form button {
@@ -128,6 +127,7 @@
   position: relative;
   margin-left: 5px;
   user-select: none;
+  align-self: center;
 }
 
 

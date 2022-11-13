@@ -1346,9 +1346,6 @@ button,
   -webkit-column-gap: 48px;
   -moz-column-gap: 48px;
   column-gap: 48px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .form button {
@@ -1406,6 +1403,9 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .form__field-checkbox label {
