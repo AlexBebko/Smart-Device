@@ -5,10 +5,14 @@
   margin: 0 auto;
   margin-bottom: 100px;
   padding-left: 250px;
-  background-image: url("../../img/year.png");
+  background-image: url("../img/year.png");
   background-repeat: no-repeat;
   background-size: 150px 320px;
   background-position: left top;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/year@2x.png");
+  }
 }
 
 .about__title {

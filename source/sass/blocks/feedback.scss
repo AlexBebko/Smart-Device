@@ -1,21 +1,39 @@
 .feedback {
   background-color: $color-deep-sky-blue;
-}
-
-.feedback__container {
-  margin: 0;
-  padding: 0;
-  background-image: url("../../img/paper-airplane.png"),
-    url("../../img/polygon.svg");
-  background-position: 15% 50%, 0 0;
-  background-size: 510px 285px, 50%;
+  background-image: url("../img/svg/polygon.svg");
+  background-position: 0 0;
+  background-size: 50%;
   background-repeat: no-repeat;
 }
 
-.feedback__wrapper {
-  min-height: 840px;
-  margin-left: 50vw;
+.feedback__container {
+  width: 80%;
+  max-width: 1220px;
+  margin: 0 auto;
   padding-top: 170px;
+  display: flex;
+  flex-direction: row;
+}
+
+.feedback__bg-image {
+  margin: 0;
+  margin-top: 75px;
+  margin-right: 115px;
+  width: 510px;
+  height: 285px;
+  background-image: url("../img/paper-airplane.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/paper-airplane@2x.png");
+  }
+}
+
+.feedback__wrapper {
+  margin: 0;
+  width: 50%;
   padding-bottom: 250px;
 }
 
@@ -41,15 +59,22 @@
 }
 
 @media (max-width: $tablet-max-width) {
-  .feedback__container {
+  .feedback {
     background-image: none;
+  }
+
+  .feedback__bg-image {
+    display: none;
+  }
+
+  .feedback__container {
+    padding-top: 50px;
   }
 
   .feedback__wrapper {
     width: 84vw;
     max-width: 670px;
     min-height: 580px;
-    padding-top: 50px;
     padding-bottom: 125px;
     margin: 0 auto;
   }

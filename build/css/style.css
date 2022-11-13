@@ -405,7 +405,7 @@ template {
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
-  src: url("../../fonts/PTMono-Regular.woff2") format("woff2"), url("../../fonts/PTMono-Regular.woff") format("woff");
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
 }
 
 *,
@@ -630,6 +630,10 @@ button,
   border-style: solid;
   border-radius: 3px;
   font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .main-header {
@@ -732,6 +736,11 @@ button,
 .main-header__button {
   max-width: 220px;
   padding: 10px 15px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
   color: #f2f5f7;
   background-color: transparent;
   border-color: #f2f5f7;
@@ -908,7 +917,7 @@ button,
   margin: 0 auto;
   margin-bottom: 100px;
   padding-left: 250px;
-  background-image: url("../../img/year.png");
+  background-image: url("../img/year.png");
   background-repeat: no-repeat;
   background-size: 150px 320px;
   background-position: left top;
@@ -1087,6 +1096,10 @@ button,
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .product__button {
@@ -1117,25 +1130,46 @@ button,
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   stroke: #ffffff;
+  fill: transparent;
 }
 
 .feedback {
   background-color: #00b2ff;
-}
-
-.feedback__container {
-  margin: 0;
-  padding: 0;
-  background-image: url("../../img/paper-airplane.png"), url("../../img/polygon.svg");
-  background-position: 15% 50%, 0 0;
-  background-size: 510px 285px, 50%;
+  background-image: url("../img/svg/polygon.svg");
+  background-position: 0 0;
+  background-size: 50%;
   background-repeat: no-repeat;
 }
 
-.feedback__wrapper {
-  min-height: 840px;
-  margin-left: 50vw;
+.feedback__container {
+  width: 80%;
+  max-width: 1220px;
+  margin: 0 auto;
   padding-top: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.feedback__bg-image {
+  margin: 0;
+  margin-top: 75px;
+  margin-right: 115px;
+  width: 510px;
+  height: 285px;
+  background-image: url("../img/paper-airplane.png");
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: contain;
+}
+
+.feedback__wrapper {
+  margin: 0;
+  width: 50%;
   padding-bottom: 250px;
 }
 
@@ -1201,6 +1235,10 @@ button,
   padding: 13px;
   border: 2px solid transparent;
   width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form__field input:hover,
@@ -1214,6 +1252,37 @@ button,
 .form__field textarea:focus-within {
   border-color: #041827;
   outline: none;
+  color: #041827;
+}
+
+.form__field input:focus-visible,
+.form__field textarea:focus-visible {
+  background-color: #f2f5f7;
+}
+
+.form__field input:focus-visible::-webkit-input-placeholder,
+.form__field textarea:focus-visible::-webkit-input-placeholder {
+  color: #041827;
+}
+
+.form__field input:focus-visible::-moz-placeholder,
+.form__field textarea:focus-visible::-moz-placeholder {
+  color: #041827;
+}
+
+.form__field input:focus-visible:-ms-input-placeholder,
+.form__field textarea:focus-visible:-ms-input-placeholder {
+  color: #041827;
+}
+
+.form__field input:focus-visible::-ms-input-placeholder,
+.form__field textarea:focus-visible::-ms-input-placeholder {
+  color: #041827;
+}
+
+.form__field input:focus-visible::placeholder,
+.form__field textarea:focus-visible::placeholder {
+  color: #041827;
 }
 
 .form__field input:disabled,
@@ -1270,19 +1339,22 @@ button,
 
 .form__button-wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 48px;
+  -moz-column-gap: 48px;
+  column-gap: 48px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
 .form button {
-  width: 50%;
+  width: 100%;
   margin: 0;
   padding: 15px 25px;
-  margin-right: 50px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1293,6 +1365,10 @@ button,
   color: #ffffff;
   border-radius: 3px;
   border-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form button:hover {
@@ -1325,6 +1401,11 @@ button,
 
 .form__field-checkbox {
   position: relative;
+  margin-left: 5px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .form__field-checkbox label {
@@ -1395,7 +1476,7 @@ input[type=checkbox]:checked + span::after {
   content: "";
   width: 10px;
   height: 8px;
-  background: url("../../img/checkbox.svg");
+  background: url("../img/svg/checkbox.svg");
   background-repeat: no-repeat;
   top: 50%;
   left: 50%;
@@ -1534,7 +1615,7 @@ input[type=checkbox]:checked + span::after {
   max-height: 630px;
   background-color: #00b2ff;
   margin: 0 auto;
-  margin-top: 146px;
+  margin-top: 140px;
   padding: 40px;
 }
 
@@ -1545,6 +1626,26 @@ input[type=checkbox]:checked + span::after {
   padding: 10px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+}
+
+.modal__close-button:focus,
+.modal__close-button:focus-within {
+  outline: none;
+}
+
+.modal__close-button:hover svg {
+  fill: #041827;
+}
+
+.modal__close-button:focus svg,
+.modal__close-button:focus-within svg {
+  fill: #041827;
+  outline: none;
+}
+
+.modal__close-button:active svg {
+  opacity: 0.5;
 }
 
 .modal__close-button svg {
@@ -1556,7 +1657,6 @@ input[type=checkbox]:checked + span::after {
 .modal__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
@@ -1596,7 +1696,7 @@ input[type=checkbox]:checked + span::after {
 .modal-form__field textarea {
   width: 100%;
   height: 155px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .modal-form button {
@@ -1883,15 +1983,22 @@ input[type=checkbox]:checked + span::after {
     max-width: 150px;
   }
 
-  .feedback__container {
+  .feedback {
     background-image: none;
+  }
+
+  .feedback__bg-image {
+    display: none;
+  }
+
+  .feedback__container {
+    padding-top: 50px;
   }
 
   .feedback__wrapper {
     width: 84vw;
     max-width: 670px;
     min-height: 580px;
-    padding-top: 50px;
     padding-bottom: 125px;
     margin: 0 auto;
   }
@@ -1910,6 +2017,12 @@ input[type=checkbox]:checked + span::after {
 
   .form__field textarea {
     padding-top: 30px;
+  }
+
+  .form__button-wrapper {
+    -webkit-column-gap: 85px;
+    -moz-column-gap: 85px;
+    column-gap: 85px;
   }
 
   .main-footer__wrapper {
@@ -1953,6 +2066,25 @@ input[type=checkbox]:checked + span::after {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background: url("../img/background-image-tablet@2x.jpg");
+    background-size: cover;
+  }
+
+  .product__link--production {
+    background-image: url("../img/product-card-1-tablet@2x.jpg");
+  }
+
+  .product__link--mounting {
+    background-image: url("../img/product-card-2-tablet@2x.jpg");
+  }
+
+  .product__link--accessories {
+    background-image: url("../img/product-card-3-tablet@2x.jpg");
   }
 }
 
@@ -2299,5 +2431,51 @@ input[type=checkbox]:checked + span::after {
 
   .footer-contacts__link {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background: url("../img/background-image-mobile@2x.jpg");
+    background-size: cover;
+  }
+
+  .product__link--production {
+    background-image: url("../img/product-card-1-mobile@2x.jpg");
+  }
+
+  .product__link--mounting {
+    background-image: url("../img/product-card-2-mobile@2x.jpg");
+  }
+
+  .product__link--accessories {
+    background-image: url("../img/product-card-3-mobile@2x.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+  .intro {
+    background: url("../img/background-image@2x.jpg");
+    background-size: cover;
+  }
+
+  .about__wrapper {
+    background-image: url("../img/year@2x.png");
+  }
+
+  .product__link--production {
+    background-image: url("../img/product-card-1@2x.jpg");
+  }
+
+  .product__link--mounting {
+    background-image: url("../img/product-card-2@2x.jpg");
+  }
+
+  .product__link--accessories {
+    background-image: url("../img/product-card-3@2x.jpg");
+  }
+
+  .feedback__bg-image {
+    background-image: url("../img/paper-airplane@2x.png");
   }
 }

@@ -30,7 +30,7 @@ const initModals = () => {
   const modalElements = document.querySelectorAll('.modal');
   modalElements.forEach((el) => {
     setTimeout(() => {
-      el.classList.remove('modal--preload');
+      el.classList.remove('is-');
     }, 100);
   });
   modals = new Modals(settings);

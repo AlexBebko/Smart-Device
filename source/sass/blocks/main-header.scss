@@ -72,6 +72,11 @@
 .main-header__button {
   max-width: 220px;
   padding: 10px 15px;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
   color: $color-alice-blue;
   background-color: transparent;
   border-color: $color-alice-blue;
