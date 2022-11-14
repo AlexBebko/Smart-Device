@@ -50,7 +50,7 @@
             </ul>
           </div>
 
-          <a class="main-header__button button" type="button" data-open-modal-button>
+          <a class="main-header__button button" type="button" tabindex="0" data-modal-opens-button>
             Заказать звонок
           </a>
 
@@ -80,7 +80,7 @@
             <p class="intro__text">
               производство и монтаж, поставка комплектующих, блоков и модулей
             </p>
-            <a class="intro__button button"  href="#" data-scroll-to-form-button>
+            <a class="intro__button button"  href="#feedback" data-scroll-to-form-button>
               <span class="intro__button-text">
                 Получить бесплатную консультацию
               </span>
@@ -172,7 +172,7 @@
                   </span>
                 </p>
               </div>
-              <div class="about__text is-closed">
+              <div class="about__text about__text--more is-closed">
                 <p>
                   Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
                 </p>
@@ -255,7 +255,7 @@
           </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" id="feedback">
 
           <div class="feedback__container">
             <div class="feedback__bg-image"></div>
@@ -281,7 +281,7 @@
                     <label for="user-phone">
                       Телефон
                     </label>
-                    <input type="tel" id="user-phone" name="user-phone" placeholder="Телефон" required>
+                    <input type="tel" id="user-phone" name="user-phone" placeholder="Телефон" data-phone-pattern required>
                   </div>
                 </div>
                 <div class="form__field form__field--question" >
@@ -370,7 +370,7 @@
                     Скрыть раздел
                   </span>
                 </button>
-                <div class="footer-nav__wrapper" data-accordion-list>
+                <div class="footer-nav__wrapper is-closed" data-accordion-list>
                   <ul class="footer-nav__list">
                     <li class="footer-nav__item">
                       <a href="" class="footer-nav__link">

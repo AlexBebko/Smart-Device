@@ -1243,46 +1243,20 @@ button,
 
 .form__field input:hover,
 .form__field textarea:hover {
-  border-color: #041827;
+  background-color: rgba(4, 20, 39, 0.3);
 }
 
 .form__field input:focus,
 .form__field input:focus-within,
 .form__field textarea:focus,
 .form__field textarea:focus-within {
-  border-color: #041827;
+  background-color: rgba(4, 20, 39, 0.3);
   outline: none;
-  color: #041827;
 }
 
 .form__field input:focus-visible,
 .form__field textarea:focus-visible {
-  background-color: #f2f5f7;
-}
-
-.form__field input:focus-visible::-webkit-input-placeholder,
-.form__field textarea:focus-visible::-webkit-input-placeholder {
-  color: #041827;
-}
-
-.form__field input:focus-visible::-moz-placeholder,
-.form__field textarea:focus-visible::-moz-placeholder {
-  color: #041827;
-}
-
-.form__field input:focus-visible:-ms-input-placeholder,
-.form__field textarea:focus-visible:-ms-input-placeholder {
-  color: #041827;
-}
-
-.form__field input:focus-visible::-ms-input-placeholder,
-.form__field textarea:focus-visible::-ms-input-placeholder {
-  color: #041827;
-}
-
-.form__field input:focus-visible::placeholder,
-.form__field textarea:focus-visible::placeholder {
-  color: #041827;
+  background-color: rgba(4, 20, 39, 0.3);
 }
 
 .form__field input:disabled,
@@ -1828,6 +1802,33 @@ input[type=checkbox]:checked + span::after {
   }
 */
 
+@media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1024px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1024px), (min-resolution: 1.5dppx) and (min-width: 1024px) {
+  .intro {
+    background: url("../img/background-image@2x.jpg");
+    background-size: cover;
+  }
+
+  .about__wrapper {
+    background-image: url("../img/year@2x.png");
+  }
+
+  .product__link--production {
+    background-image: url("../img/product-card-1@2x.jpg");
+  }
+
+  .product__link--mounting {
+    background-image: url("../img/product-card-2@2x.jpg");
+  }
+
+  .product__link--accessories {
+    background-image: url("../img/product-card-3@2x.jpg");
+  }
+
+  .feedback__bg-image {
+    background-image: url("../img/paper-airplane@2x.png");
+  }
+}
+
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
@@ -2365,6 +2366,7 @@ input[type=checkbox]:checked + span::after {
   }
 
   .main-footer__accordion-button {
+    display: block;
     position: absolute;
     top: 0;
     right: 26px;
@@ -2450,32 +2452,5 @@ input[type=checkbox]:checked + span::after {
 
   .product__link--accessories {
     background-image: url("../img/product-card-3-mobile@2x.jpg");
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
-  .intro {
-    background: url("../img/background-image@2x.jpg");
-    background-size: cover;
-  }
-
-  .about__wrapper {
-    background-image: url("../img/year@2x.png");
-  }
-
-  .product__link--production {
-    background-image: url("../img/product-card-1@2x.jpg");
-  }
-
-  .product__link--mounting {
-    background-image: url("../img/product-card-2@2x.jpg");
-  }
-
-  .product__link--accessories {
-    background-image: url("../img/product-card-3@2x.jpg");
-  }
-
-  .feedback__bg-image {
-    background-image: url("../img/paper-airplane@2x.png");
   }
 }

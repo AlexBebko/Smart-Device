@@ -10,7 +10,7 @@
   background-size: 150px 320px;
   background-position: left top;
 
-  @media (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
     background-image: url("../img/year@2x.png");
   }
 }

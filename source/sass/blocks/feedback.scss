@@ -26,7 +26,7 @@
   background-position: 0 50%;
   background-size: contain;
 
-  @media (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
     background-image: url("../img/paper-airplane@2x.png");
   }
 }

@@ -33,22 +33,17 @@
   user-select: none;
 
   &:hover {
-    border-color: $color-black-pearl;
+    background-color: $color-black-pearl-input-active;
   }
 
   &:focus,
   &:focus-within {
-    border-color: $color-black-pearl;
+    background-color: $color-black-pearl-input-active;
     outline: none;
-    color: $color-black-pearl;
   }
 
   &:focus-visible {
-    background-color: $color-alice-blue;
-
-    &::placeholder {
-      color: $color-black-pearl;
-    }
+    background-color: $color-black-pearl-input-active;
   }
 
   &:disabled {

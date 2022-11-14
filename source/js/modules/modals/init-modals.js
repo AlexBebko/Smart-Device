@@ -30,7 +30,7 @@ const initModals = () => {
   const modalElements = document.querySelectorAll('.modal');
   modalElements.forEach((el) => {
     setTimeout(() => {
-      el.classList.remove('is-');
+      el.classList.remove('is-active');
     }, 100);
   });
   modals = new Modals(settings);

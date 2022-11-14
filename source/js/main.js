@@ -1,6 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {openModalWindow} from './modules/modals/modal';
+import {callEventListeners} from './modules/modals/modal';
+import {openMoreText} from './modules/modals/more';
+import {scrollToBlock} from './modules/modals/scroll-to-block';
 
 // ---------------------------------
 
@@ -18,7 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    openModalWindow();
+    callEventListeners();
+    openMoreText();
+    scrollToBlock();
   });
 });
 
