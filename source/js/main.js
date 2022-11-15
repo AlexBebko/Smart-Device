@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {callEventListeners} from './modules/modals/modal';
 import {openMoreText} from './modules/modals/more';
 import {scrollToBlock} from './modules/modals/scroll-to-block';
+import {makeMask} from './modules/modals/phone-mask';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
     callEventListeners();
     openMoreText();
     scrollToBlock();
+    makeMask();
   });
 });
 

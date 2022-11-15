@@ -281,7 +281,7 @@
                     <label for="user-phone">
                       Телефон
                     </label>
-                    <input type="tel" id="user-phone" name="user-phone" placeholder="Телефон" data-phone-pattern required>
+                    <input type="tel" id="user-phone" name="user-phone" placeholder="Телефон" data-phone-input required>
                   </div>
                 </div>
                 <div class="form__field form__field--question" >
@@ -454,12 +454,12 @@
 
 
       <div class="modal is-closed" data-modal-window>
-        <div class="modal__wrapper">
+        <div class="modal__wrapper" tabindex="0" data-modal-block>
           <h2 class="visually-hidden">
             Модальное окно с формой заказа обратного звонка.
           </h2>
 
-          <button class="modal__close-button" type="button">
+          <button class="modal__close-button" type="button" data-modal-close-button>
             <span class="visually-hidden">
               Закрыть модальное окно
             </span>
@@ -481,13 +481,13 @@
                   <label for="modal-user-name">
                     Имя
                   </label>
-                  <input id="modal-user-name" type="text" name="user-name" placeholder="Имя" required>
+                  <input id="modal-user-name" type="text" name="user-name" placeholder="Имя" data-modal-name-input required>
                 </div>
                 <div class="modal-form__field form__field">
                   <label for="modal-user-phone">
                     Телефон
                   </label>
-                  <input id="modal-user-phone" type="tel" name="user-phone" placeholder="Телефон" required>
+                  <input id="modal-user-phone" type="tel" name="user-phone" placeholder="Телефон" data-phone-input required>
                 </div>
                 <div class="modal-form__field form__field">
                   <label for="modal-user-question">

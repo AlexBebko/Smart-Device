@@ -2,11 +2,11 @@ import {isEscapeKey, isEnterKey} from '../../utils/is-key';
 
 const bodyElement = document.querySelector('body');
 
-const modalOpenButtonElement = document.querySelector('.main-header__button');
-const modalWindow = document.querySelector('.modal');
-const modalWindowElement = document.querySelector('.modal__wrapper');
-const modalCloseButtonElement = document.querySelector('.modal__close-button');
-const modalInputNameElement = modalWindow.querySelector('input');
+const modalOpenButtonElement = document.querySelector('[data-modal-opens-button]');
+const modalWindow = document.querySelector('[data-modal-window]');
+const modalWindowElement = document.querySelector('[data-modal-block]');
+const modalCloseButtonElement = document.querySelector('[data-modal-close-button]');
+const modalInputNameElement = modalWindow.querySelector('[data-modal-name-input]');
 
 
 function onModalOpenButtonClick() {
@@ -39,10 +39,39 @@ function onOutsideModalClick(evt) {
   }
 }
 
+function focusableModalWindow() {
+  let focusableElementsString = 'a[href], input:not([disabled]), textarea:not([disabled]), button:not([disabled]), [tabindex="0"]';
+  let focusableElements = modalWindowElement.querySelectorAll(focusableElementsString);
+
+  focusableElements = Array.prototype.slice.call(focusableElements);
+
+  let firstTabStop = focusableElements[0];
+  let lastTabStop = focusableElements[focusableElements.length - 1];
+
+  modalInputNameElement.focus();
+
+  modalWindowElement.addEventListener('keydown', function (evt) {
+    if (evt.keyCode === 9) {
+      if (evt.shiftKey) {
+        if (document.activeElement === firstTabStop) {
+          evt.preventDefault();
+          lastTabStop.focus();
+        }
+      } else {
+        if (document.activeElement === lastTabStop) {
+          evt.preventDefault();
+          firstTabStop.focus();
+        }
+      }
+    }
+  });
+}
+
 function openModalWindow() {
   modalWindow.classList.remove('is-closed');
   bodyElement.classList.add('scroll-lock');
-  modalInputNameElement.focus();
+
+  focusableModalWindow();
 
   modalOpenButtonElement.removeEventListener('click', onModalOpenButtonClick);
   modalOpenButtonElement.removeEventListener('keydown', onModalOpenButtonEnterKeydown);

@@ -1,4 +1,4 @@
-const anchorElement = document.querySelector('.intro__button');
+const anchorElement = document.querySelector('[data-scroll-to-form-button]');
 const feedbackBlock = document.querySelector('#feedback');
 
 
