@@ -107,6 +107,7 @@
 @media (max-width: $tablet-max-width) {
   .product {
     height: 100%;
+    min-height: 250px;
   }
 
   .product__link {

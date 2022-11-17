@@ -4,6 +4,7 @@ import {callEventListeners} from './modules/modals/modal';
 import {openMoreText} from './modules/modals/more';
 import {scrollToBlock} from './modules/modals/scroll-to-block';
 import {makeMask} from './modules/modals/phone-mask';
+import {accordionWorking} from './modules/modals/accordion';
 
 // ---------------------------------
 
@@ -16,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
-
+  accordionWorking();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {

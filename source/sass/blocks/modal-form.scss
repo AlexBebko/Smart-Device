@@ -16,11 +16,16 @@
 .modal__wrapper {
   position: relative;
   width: 500px;
-  max-height: 630px;
+  max-height: 610px;
   background-color: $color-deep-sky-blue;
   margin: 0 auto;
-  margin-top: 140px;
+  margin-top: 106px;
   padding: 40px;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
 .modal__close-button {

@@ -8,7 +8,6 @@ const modalWindowElement = document.querySelector('[data-modal-block]');
 const modalCloseButtonElement = document.querySelector('[data-modal-close-button]');
 const modalInputNameElement = modalWindow.querySelector('[data-modal-name-input]');
 
-
 function onModalOpenButtonClick() {
   openModalWindow();
 }
@@ -70,6 +69,7 @@ function focusableModalWindow() {
 function openModalWindow() {
   modalWindow.classList.remove('is-closed');
   bodyElement.classList.add('scroll-lock');
+
 
   focusableModalWindow();
 

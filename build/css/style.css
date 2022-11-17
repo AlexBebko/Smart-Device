@@ -772,6 +772,7 @@ button,
 .intro__wrapper {
   min-height: 880px;
   padding-top: 305px;
+  padding-bottom: 280px;
   max-width: 1220px;
   margin: 0 auto;
   margin-bottom: 120px;
@@ -1340,6 +1341,7 @@ button,
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
 }
 
 .form button:hover {
@@ -1474,6 +1476,7 @@ input[type=checkbox]:checked + span::after {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  width: 80%;
   max-width: 1220px;
   margin: 0 auto;
   margin-top: 50px;
@@ -1491,6 +1494,7 @@ input[type=checkbox]:checked + span::after {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-right: 15px;
 }
 
 .main-footer__logo {
@@ -1586,11 +1590,16 @@ input[type=checkbox]:checked + span::after {
 .modal__wrapper {
   position: relative;
   width: 500px;
-  max-height: 630px;
+  max-height: 610px;
   background-color: #00b2ff;
   margin: 0 auto;
-  margin-top: 140px;
+  margin-top: 106px;
   padding: 40px;
+  overflow: auto;
+}
+
+.modal__wrapper::-webkit-scrollbar {
+  width: 0;
 }
 
 .modal__close-button {
@@ -1835,6 +1844,24 @@ input[type=checkbox]:checked + span::after {
   }
 }
 
+@media (max-width: 1280px) {
+  .main-footer__nav {
+    max-width: 220px;
+    margin-right: 3vw;
+  }
+
+  .footer-nav__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
@@ -1897,6 +1924,7 @@ input[type=checkbox]:checked + span::after {
   .intro__wrapper {
     min-height: 640px;
     padding-top: 180px;
+    padding-bottom: 205px;
     max-width: 670px;
     margin-bottom: 80px;
   }
@@ -1948,8 +1976,8 @@ input[type=checkbox]:checked + span::after {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: 250px 250px 250px;
-    grid-template-rows: 250px 250px 250px;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     -webkit-column-gap: 0;
     -moz-column-gap: 0;
     column-gap: 0;
@@ -1961,6 +1989,7 @@ input[type=checkbox]:checked + span::after {
 
   .product {
     height: 100%;
+    min-height: 250px;
   }
 
   .product__link {
@@ -2117,6 +2146,7 @@ input[type=checkbox]:checked + span::after {
   .intro__wrapper {
     min-height: 560px;
     padding-top: 150px;
+    padding-bottom: 190px;
     width: 84vw;
     margin-bottom: 50px;
   }
@@ -2320,6 +2350,7 @@ input[type=checkbox]:checked + span::after {
 
   .main-footer__wrapper {
     max-width: none;
+    width: 100%;
     margin: 0 auto;
     margin-top: 35px;
     margin-bottom: 35px;
@@ -2346,6 +2377,7 @@ input[type=checkbox]:checked + span::after {
 
   .main-footer__nav {
     max-width: none;
+    margin: 0;
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
@@ -2368,10 +2400,9 @@ input[type=checkbox]:checked + span::after {
   .main-footer__accordion-button {
     display: block;
     position: absolute;
-    top: 0;
-    right: 26px;
-    width: 15px;
-    height: 15px;
+    top: -20px;
+    width: 100%;
+    height: 55px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -2380,7 +2411,8 @@ input[type=checkbox]:checked + span::after {
   .main-footer__accordion-container.is-opened .main-footer__accordion-button::before {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 27px;
+    right: 0;
     width: 15px;
     height: 1px;
     background-color: #c4c4c4;
@@ -2390,7 +2422,8 @@ input[type=checkbox]:checked + span::after {
   .main-footer__accordion-container.is-closed .main-footer__accordion-button::after {
     content: "";
     position: absolute;
-    top: 7px;
+    top: 27px;
+    right: 0;
     width: 15px;
     height: 1px;
     background-color: #c4c4c4;
