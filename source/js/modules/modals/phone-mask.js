@@ -1,10 +1,13 @@
-const phoneInputElements = document.querySelectorAll('[data-phone-input]');
+function makeMaskForPhoneInputs() {
+  const phoneInputElements = document.querySelectorAll('[data-phone-input]');
 
-for (let phoneInput of phoneInputElements) {
-  for (let ev of ['input', 'blur', 'focus']) {
-    phoneInput.addEventListener(ev, makeMask);
+  for (let phoneInput of phoneInputElements) {
+    for (let ev of ['input', 'blur', 'focus']) {
+      phoneInput.addEventListener(ev, makeMask);
+    }
   }
 }
+
 
 function makeMask(evt) {
   const el = evt.target;
@@ -13,21 +16,24 @@ function makeMask(evt) {
   const matrixDef = '+7(___) ___-__-__';
   const matrix = pattern ? pattern : matrixDef;
   let i = 0;
-  const def = matrix.replace(/\D/g, '');
-  let val = evt.target.value.replace(/\D/g, '');
+  const definition = matrix.replace(/\D/g, '');
+  let elementValue = el.value.replace(/\D/g, '').replace(/^78/, '7');
 
   if (clearVal !== 'false' && evt.type === 'blur') {
-    if (val.length < matrix.match(/([\_\d])/g).length) {
+    if (elementValue.length < matrix.match(/([\_\d])/g).length) {
       evt.target.value = '';
       return;
     }
   }
-  if (def.length >= val.length) {
-    val = def;
+  if (definition.length >= elementValue.length) {
+    elementValue = definition;
   }
-  evt.target.value = matrix.replace(/./g, function (a) {
-    return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a;
+  el.value = matrixDef.replace(/./g, function (char) {
+    if (/[_\d]/.test(char) && i < elementValue.length) {
+      return elementValue.charAt(i++);
+    }
+    return i >= elementValue.length ? '' : char;
   });
 }
 
-export {makeMask};
+export {makeMaskForPhoneInputs};

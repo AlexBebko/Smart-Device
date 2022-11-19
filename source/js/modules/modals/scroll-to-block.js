@@ -11,7 +11,9 @@ function onAnchorButtonClick(evt) {
 }
 
 function scrollToBlock() {
-  anchorElement.addEventListener('click', onAnchorButtonClick);
+  if (anchorElement) {
+    anchorElement.addEventListener('click', onAnchorButtonClick);
+  }
 }
 
 export {scrollToBlock};

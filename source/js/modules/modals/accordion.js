@@ -3,34 +3,38 @@ const accordionElement = document.querySelectorAll('.main-footer__accordion-cont
 
 function accordionWorking() {
 
-  accordionElement.forEach((element) => {
-    element.classList.remove('no-js');
-    element.classList.remove('is-opened');
-    element.classList.add('is-closed');
-  });
+  if (accordionElement) {
 
-  accordionButtonElement.forEach((item) => {
-    item.addEventListener('click', () => {
-      const parent = item.parentNode;
-
-      if (parent.classList.contains('is-closed')) {
-
-        accordionElement.forEach((child) => {
-          child.classList.remove('is-opened');
-          child.classList.add('is-closed');
-        });
-
-        parent.classList.remove('is-closed');
-        parent.classList.add('is-opened');
-      } else {
-        parent.classList.remove('is-opened');
-        parent.classList.add('is-closed');
-      }
-
+    accordionElement.forEach((element) => {
+      element.classList.remove('no-js');
+      element.classList.remove('is-opened');
+      element.classList.add('is-closed');
     });
-  });
+  }
+
+  if (accordionButtonElement) {
+
+    accordionButtonElement.forEach((item) => {
+      item.addEventListener('click', () => {
+        const parent = item.parentNode;
+
+        if (parent.classList.contains('is-closed')) {
+
+          accordionElement.forEach((child) => {
+            child.classList.remove('is-opened');
+            child.classList.add('is-closed');
+          });
+
+          parent.classList.remove('is-closed');
+          parent.classList.add('is-opened');
+        } else {
+          parent.classList.remove('is-opened');
+          parent.classList.add('is-closed');
+        }
+
+      });
+    });
+  }
 }
 
 export {accordionWorking};
-
-

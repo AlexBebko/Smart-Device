@@ -1497,7 +1497,7 @@ input[type=checkbox]:checked + span::after {
   margin-right: 15px;
 }
 
-.main-footer__logo {
+.main-footer__logo-link {
   margin-bottom: 30px;
 }
 
@@ -1534,7 +1534,7 @@ input[type=checkbox]:checked + span::after {
   text-transform: uppercase;
 }
 
-.socials__list {
+.socials {
   padding: 0;
   margin: 0;
   display: -ms-grid;
@@ -2075,7 +2075,7 @@ input[type=checkbox]:checked + span::after {
     margin-bottom: 35px;
   }
 
-  .main-footer__logo {
+  .main-footer__logo-link {
     margin-bottom: 0;
   }
 
@@ -2364,7 +2364,7 @@ input[type=checkbox]:checked + span::after {
     margin-bottom: 25px;
   }
 
-  .main-footer__logo {
+  .main-footer__logo-link {
     margin-bottom: 15px;
   }
 
