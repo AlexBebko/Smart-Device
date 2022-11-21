@@ -18,15 +18,22 @@
   flex-direction: column;
   align-items: center;
   margin-right: 15px;
+  margin-left: -10px;
 }
 
 .main-footer__logo-link {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .main-footer__nav-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 7px;
+  padding-right: 38px;
+
+  @media (max-width: $vp-1280) {
+    padding-right: 0;
+  }
 }
 
 .main-footer__nav {
@@ -34,7 +41,7 @@
 
   @media (max-width: $vp-1280) {
     max-width: 220px;
-    margin-right: 3vw;
+    margin-right: 1vw;
   }
 }
 
@@ -54,6 +61,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: 0.05em;
   color: $color-default-white;
   text-transform: uppercase;
 }
@@ -62,13 +70,14 @@
 @media (max-width: $tablet-max-width) {
   .main-footer__wrapper {
     flex-direction: column;
-    max-width: 670px;
+    min-width: 675px;
     margin-bottom: 65px;
   }
 
   .main-footer__socials-container {
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
     margin-bottom: 35px;
   }
 
@@ -80,6 +89,10 @@
     max-width: 220px;
   }
 
+  .main-footer__nav-container {
+    margin-top: 0;
+  }
+
   .main-footer__contacts {
     max-width: 320px;
   }
@@ -88,19 +101,20 @@
 @media (max-width: $mobile-max-width) {
   .main-footer__wrapper {
     max-width: none;
+    min-width: 270px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 35px;
+    margin-top: 20px;
     margin-bottom: 35px;
   }
 
   .main-footer__socials-container {
     flex-direction: column;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
   }
 
   .main-footer__logo-link {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .main-footer__nav-container {
@@ -110,34 +124,40 @@
   .main-footer__nav {
     max-width: none;
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 21px;
+    padding-bottom: 22px;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
   }
 
   .main-footer__contacts {
     max-width: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 22px;
+    padding-bottom: 14px;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 
   .main-footer__accordion-container {
     margin: 0 auto;
-    max-width: 270px;
+    min-width: 270px;
+    width: 84vw;
     position: relative;
   }
 
   .main-footer__accordion-button {
     display: block;
     position: absolute;
-    top: -20px;
+    top: -21px;
+    right: 2px;
     width: 100%;
     height: 55px;
     background-color: transparent;
     border: none;
     cursor: pointer;
+  }
+
+  .main-footer__title {
+    margin-bottom: 14px;
   }
 
   .main-footer__accordion-container.is-opened .main-footer__accordion-button::before {

@@ -1,6 +1,6 @@
 .feedback {
   background-color: $color-deep-sky-blue;
-  background-image: url("../img/svg/polygon.svg");
+  background-image: url("/img/svg/polygon.svg");
   background-position: 0 0;
   background-size: 50%;
   background-repeat: no-repeat;
@@ -9,10 +9,11 @@
 .feedback__container {
   width: 80%;
   max-width: 1220px;
-  margin: 0 auto;
-  padding-top: 170px;
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
+  padding-top: 165px;
+  padding-bottom: 248px;
 }
 
 .feedback__bg-image {
@@ -21,26 +22,36 @@
   margin-right: 115px;
   width: 510px;
   height: 285px;
-  background-image: url("../img/paper-airplane.png");
   background-repeat: no-repeat;
   background-position: 0 50%;
   background-size: contain;
+}
+
+.webp .feedback__bg-image {
+  background-image: url("/img/paper-airplane.webp");
 
   @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
-    background-image: url("../img/paper-airplane@2x.png");
+    background-image: url("/img/paper-airplane@2x.webp");
+  }
+}
+
+.no-webp .feedback__bg-image {
+  background-image: url("/img/paper-airplane.png");
+
+  @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
+    background-image: url("/img/paper-airplane@2x.png");
   }
 }
 
 .feedback__wrapper {
   margin: 0;
   width: 50%;
-  padding-bottom: 250px;
 }
 
 .feedback__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-family: $ff-roboto;
   font-weight: 400;
   font-size: 36px;
@@ -63,28 +74,31 @@
     background-image: none;
   }
 
+  .feedback__container {
+    width: 87vw;
+    max-width: 670px;
+    min-height: 580px;
+    padding-bottom: 125px;
+    display: block;
+    padding-top: 45px;
+  }
+
   .feedback__bg-image {
     display: none;
   }
 
-  .feedback__container {
-    padding-top: 50px;
-  }
-
   .feedback__wrapper {
-    width: 84vw;
-    max-width: 670px;
-    min-height: 580px;
-    padding-bottom: 125px;
-    margin: 0 auto;
+    width: 100%;
+    min-width: 100%;
+    padding: 0;
   }
 
   .feedback__title {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
   .feedback__text {
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 }
 
@@ -93,21 +107,22 @@
     border-bottom: 15px solid $color-bg-white;
   }
 
-  .feedback__wrapper {
+  .feedback__container {
     width: 84vw;
     min-height: 750px;
-    padding-bottom: 90px;
+    min-width: 270px;
+    padding-bottom: 85px;
   }
 
   .feedback__title {
     max-width: 270px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 30px;
     line-height: 42px;
   }
 
   .feedback__text {
-    margin-bottom: 40px;
+    margin-bottom: 34px;
     font-size: 14px;
     line-height: 19px;
   }

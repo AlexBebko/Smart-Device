@@ -1,3 +1,7 @@
+.footer-contacts__wrapper {
+  padding-left: 30px;
+}
+
 .footer-contacts__list {
   margin: 0;
   padding: 0;
@@ -5,7 +9,7 @@
 }
 
 .footer-contacts__item {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   &:last-child {
     margin-bottom: 0;
@@ -38,8 +42,22 @@
   }
 }
 
+@media (max-width: $tablet-max-width) {
+  .footer-contacts__wrapper {
+    padding: 0;
+  }
+}
+
 @media (max-width: $mobile-max-width) {
   .footer-contacts__link {
     font-size: 14px;
+  }
+
+  .footer-contacts__item {
+    margin-bottom: 4px;
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
   }
 }

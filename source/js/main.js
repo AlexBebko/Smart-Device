@@ -5,6 +5,7 @@ import {openMoreText} from './modules/modals/more';
 import {scrollToBlock} from './modules/modals/scroll-to-block';
 import {makeMaskForPhoneInputs} from './modules/modals/phone-mask';
 import {accordionWorking} from './modules/modals/accordion';
+import {checkSupport} from './modules/modals/check-webp-support';
 
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   accordionWorking();
   makeMaskForPhoneInputs();
+  checkSupport();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {

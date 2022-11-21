@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .form__field {
@@ -28,6 +28,7 @@
   line-height: 22px;
   color: $color-default-white;
   padding: 13px;
+  padding-left: 16px;
   border: 2px solid transparent;
   width: 100%;
   user-select: none;
@@ -54,7 +55,7 @@
 
 .form__field textarea {
   max-height: 155px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   padding-top: 23px;
 }
 
@@ -76,7 +77,7 @@
 .form button {
   width: 100%;
   margin: 0;
-  padding: 15px 25px;
+  padding: 12px 25px;
   font-family: $ff-roboto;
   font-weight: 700;
   font-size: 16px;
@@ -122,6 +123,7 @@
 .form__field-checkbox {
   position: relative;
   margin-left: 5px;
+  margin-top: 10px;
   user-select: none;
   align-self: center;
 }
@@ -212,7 +214,16 @@ input[type="checkbox"]:checked + span {
   }
 
   .form__button-wrapper {
-    column-gap: 85px;
+    column-gap: 30px;
+  }
+
+  .form button {
+    max-width: 265px;
+  }
+
+  .form__field-checkbox {
+    margin-left: 0;
+    margin-top: 6px;
   }
 }
 
@@ -231,10 +242,16 @@ input[type="checkbox"]:checked + span {
     }
   }
 
+  .form__field input {
+    padding-top: 10px;
+    padding-left: 13px;
+  }
+
   .form__field textarea {
     max-height: 180px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding-top: 23px;
+    padding-left: 13px;
   }
 
   .form__button-wrapper {
@@ -245,8 +262,14 @@ input[type="checkbox"]:checked + span {
   }
 
   .form button {
-    width: 100%;
+    max-width: 100%;
     margin: 0;
     margin-bottom: 25px;
+    padding-bottom: 10px;
+  }
+
+  .form__field-checkbox {
+    margin-top: 0;
+    margin-left: 5px;
   }
 }

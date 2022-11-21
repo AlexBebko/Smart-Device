@@ -1,6 +1,7 @@
 .socials {
   padding: 0;
   margin: 0;
+  padding-right: 30px;
   display: grid;
   grid-template-columns: 40px 40px 40px;
   grid-template-rows: 40px;
@@ -30,4 +31,18 @@
 
 .socials__link svg {
   fill: inherit;
+}
+
+@media (max-width: $tablet-max-width) {
+  .socials {
+    padding: 0;
+    margin-right: -7px;
+  }
+}
+
+@media (max-width: $mobile-max-width) {
+  .socials {
+    margin-left: 15px;
+    margin-right: 0;
+  }
 }

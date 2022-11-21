@@ -1,11 +1,23 @@
 .intro {
-  background: url("../img/background-image.jpg");
   background-color: $color-black-pearl;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.webp .intro {
+  background-image: url("/img/background-image.webp");
 
   @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
-    background: url("../img/background-image@2x.jpg");
+    background-image: url("/img/background-image@2x.webp");
+    background-size: cover;
+  }
+}
+
+.no-webp .intro {
+  background-image: url("/img/background-image.jpg");
+
+  @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
+    background-image: url("/img/background-image@2x.jpg");
     background-size: cover;
   }
 }
@@ -13,20 +25,19 @@
 .intro__wrapper {
   min-height: 880px;
   padding-top: 305px;
-  padding-bottom: 280px;
+  padding-bottom: 282px;
   max-width: 1220px;
   margin: 0 auto;
-  margin-bottom: 120px;
 }
 
 .intro__container {
-  margin-left: 125px;
+  margin-left: 116px;
 }
 
 .intro__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-family: $ff-roboto;
   font-weight: 700;
   font-size: 80px;
@@ -40,7 +51,7 @@
   max-width: 685px;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 47px;
   font-family: $ff-pt-mono;
   font-size: 22px;
   line-height: 155%;
@@ -55,7 +66,7 @@
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.05em;
-  padding: 15px 25px;
+  padding: 15px 26px;
   border: 1px solid transparent;
 
   &:hover {
@@ -84,13 +95,25 @@
 
 @media (max-width: $tablet-max-width) {
   .intro {
-    background: url("../img/background-image-tablet.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .webp .intro {
+    background-image: url("/img/background-image-tablet.webp");
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../img/background-image-tablet@2x.jpg");
+      background-image: url("/img/background-image-tablet@2x.webp");
+      background-size: cover;
+    }
+  }
+
+  .no-webp .intro {
+    background-image: url("/img/background-image-tablet.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("/img/background-image-tablet@2x.jpg");
       background-size: cover;
     }
   }
@@ -100,7 +123,6 @@
     padding-top: 180px;
     padding-bottom: 205px;
     max-width: 670px;
-    margin-bottom: 80px;
   }
 
   .intro__container {
@@ -108,14 +130,14 @@
   }
 
   .intro__title {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: 64px;
     line-height: 75px;
     letter-spacing: 0.07em;
   }
 
   .intro__text {
-    margin-bottom: 50px;
+    margin-bottom: 57px;
   }
 
   .intro__button {
@@ -125,12 +147,24 @@
 
 @media (max-width: $mobile-max-width) {
   .intro {
-    background: url("../img/background-image-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .webp .intro {
+    background-image: url("/img/background-image-mobile.webp");
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../img/background-image-mobile@2x.jpg");
+      background-image: url("/img/background-image-mobile@2x.webp");
+      background-size: cover;
+    }
+  }
+
+  .no-webp .intro {
+    background-image: url("/img/background-image-mobile.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("/img/background-image-mobile@2x.jpg");
       background-size: cover;
     }
   }
@@ -140,24 +174,27 @@
     padding-top: 150px;
     padding-bottom: 190px;
     width: 84vw;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .intro__title {
     font-size: 36px;
     line-height: 42px;
+    margin-bottom: 8px;
   }
 
   .intro__text {
     width: 270px;
     font-size: 14px;
+    margin-bottom: 45px;
   }
 
   .intro__button {
+    min-width: 270px;
     margin: 0;
     font-size: 14px;
     line-height: 16px;
-    padding: 10px 30px;
+    padding: 10px 35px;
   }
 
   .intro__button-text {
