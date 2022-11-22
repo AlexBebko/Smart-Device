@@ -5,19 +5,19 @@
 }
 
 .webp .intro {
-  background-image: url("/img/background-image.webp");
+  background-image: url("../img/background-image.webp");
 
   @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
-    background-image: url("/img/background-image@2x.webp");
+    background-image: url("../img/background-image@2x.webp");
     background-size: cover;
   }
 }
 
 .no-webp .intro {
-  background-image: url("/img/background-image.jpg");
+  background-image: url("../img/background-image.jpg");
 
   @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
-    background-image: url("/img/background-image@2x.jpg");
+    background-image: url("../img/background-image@2x.jpg");
     background-size: cover;
   }
 }
@@ -101,19 +101,19 @@
   }
 
   .webp .intro {
-    background-image: url("/img/background-image-tablet.webp");
+    background-image: url("../img/background-image-tablet.webp");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("/img/background-image-tablet@2x.webp");
+      background-image: url("../img/background-image-tablet@2x.webp");
       background-size: cover;
     }
   }
 
   .no-webp .intro {
-    background-image: url("/img/background-image-tablet.jpg");
+    background-image: url("../img/background-image-tablet.jpg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("/img/background-image-tablet@2x.jpg");
+      background-image: url("../img/background-image-tablet@2x.jpg");
       background-size: cover;
     }
   }
@@ -152,19 +152,19 @@
   }
 
   .webp .intro {
-    background-image: url("/img/background-image-mobile.webp");
+    background-image: url("../img/background-image-mobile.webp");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("/img/background-image-mobile@2x.webp");
+      background-image: url("../img/background-image-mobile@2x.webp");
       background-size: cover;
     }
   }
 
   .no-webp .intro {
-    background-image: url("/img/background-image-mobile.jpg");
+    background-image: url("../img/background-image-mobile.jpg");
 
     @media (min-resolution: $retina-dppx) {
-      background-image: url("/img/background-image-mobile@2x.jpg");
+      background-image: url("../img/background-image-mobile@2x.jpg");
       background-size: cover;
     }
   }

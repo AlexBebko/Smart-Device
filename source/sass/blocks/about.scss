@@ -11,18 +11,18 @@
 }
 
 .webp .about__wrapper {
-  background-image: url("/img/year.webp");
+  background-image: url("../img/year.webp");
 
   @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
-    background-image: url("/img/year@2x.webp");
+    background-image: url("../img/year@2x.webp");
   }
 }
 
 .no-webp .about__wrapper {
-  background-image: url("/img/year.png");
+  background-image: url("../img/year.png");
 
   @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
-    background-image: url("/img/year@2x.png");
+    background-image: url("../img/year@2x.png");
   }
 }
 

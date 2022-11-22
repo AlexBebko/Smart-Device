@@ -763,11 +763,11 @@ button,
 }
 
 .webp .intro {
-  background-image: url("/img/background-image.webp");
+  background-image: url("../img/background-image.webp");
 }
 
 .no-webp .intro {
-  background-image: url("/img/background-image.jpg");
+  background-image: url("../img/background-image.jpg");
 }
 
 .intro__wrapper {
@@ -927,11 +927,11 @@ button,
 }
 
 .webp .about__wrapper {
-  background-image: url("/img/year.webp");
+  background-image: url("../img/year.webp");
 }
 
 .no-webp .about__wrapper {
-  background-image: url("/img/year.png");
+  background-image: url("../img/year.png");
 }
 
 .about__title {
@@ -1161,7 +1161,7 @@ button,
 
 .feedback {
   background-color: #00b2ff;
-  background-image: url("/img/svg/polygon.svg");
+  background-image: url("../img/svg/polygon.svg");
   background-position: 0 0;
   background-size: 50%;
   background-repeat: no-repeat;
@@ -1194,11 +1194,11 @@ button,
 }
 
 .webp .feedback__bg-image {
-  background-image: url("/img/paper-airplane.webp");
+  background-image: url("../img/paper-airplane.webp");
 }
 
 .no-webp .feedback__bg-image {
-  background-image: url("/img/paper-airplane.png");
+  background-image: url("../img/paper-airplane.png");
 }
 
 .feedback__wrapper {
@@ -1856,21 +1856,21 @@ input[type=checkbox]:checked + span::after {
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1024px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1024px), (min-resolution: 1.5dppx) and (min-width: 1024px) {
   .webp .intro {
-    background-image: url("/img/background-image@2x.webp");
+    background-image: url("../img/background-image@2x.webp");
     background-size: cover;
   }
 
   .no-webp .intro {
-    background-image: url("/img/background-image@2x.jpg");
+    background-image: url("../img/background-image@2x.jpg");
     background-size: cover;
   }
 
   .webp .about__wrapper {
-    background-image: url("/img/year@2x.webp");
+    background-image: url("../img/year@2x.webp");
   }
 
   .no-webp .about__wrapper {
-    background-image: url("/img/year@2x.png");
+    background-image: url("../img/year@2x.png");
   }
 
   .webp .product__link--production {
@@ -1898,11 +1898,11 @@ input[type=checkbox]:checked + span::after {
   }
 
   .webp .feedback__bg-image {
-    background-image: url("/img/paper-airplane@2x.webp");
+    background-image: url("../img/paper-airplane@2x.webp");
   }
 
   .no-webp .feedback__bg-image {
-    background-image: url("/img/paper-airplane@2x.png");
+    background-image: url("../img/paper-airplane@2x.png");
   }
 }
 
@@ -2003,11 +2003,11 @@ input[type=checkbox]:checked + span::after {
   }
 
   .webp .intro {
-    background-image: url("/img/background-image-tablet.webp");
+    background-image: url("../img/background-image-tablet.webp");
   }
 
   .no-webp .intro {
-    background-image: url("/img/background-image-tablet.jpg");
+    background-image: url("../img/background-image-tablet.jpg");
   }
 
   .intro__wrapper {
@@ -2121,27 +2121,27 @@ input[type=checkbox]:checked + span::after {
   }
 
   .webp .product__link--production {
-    background-image: url("/img/product-card-1-tablet.webp");
+    background-image: url("../img/product-card-1-tablet.webp");
   }
 
   .webp .product__link--mounting {
-    background-image: url("/img/product-card-2-tablet.webp");
+    background-image: url("../img/product-card-2-tablet.webp");
   }
 
   .webp .product__link--accessories {
-    background-image: url("/img/product-card-3-tablet.webp");
+    background-image: url("../img/product-card-3-tablet.webp");
   }
 
   .no-webp .product__link--production {
-    background-image: url("/img/product-card-1-tablet.jpg");
+    background-image: url("../img/product-card-1-tablet.jpg");
   }
 
   .no-webp .product__link--mounting {
-    background-image: url("/img/product-card-2-tablet.jpg");
+    background-image: url("../img/product-card-2-tablet.jpg");
   }
 
   .no-webp .product__link--accessories {
-    background-image: url("/img/product-card-3-tablet.jpg");
+    background-image: url("../img/product-card-3-tablet.jpg");
   }
 
   .product__text {
@@ -2262,37 +2262,37 @@ input[type=checkbox]:checked + span::after {
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .webp .intro {
-    background-image: url("/img/background-image-tablet@2x.webp");
+    background-image: url("../img/background-image-tablet@2x.webp");
     background-size: cover;
   }
 
   .no-webp .intro {
-    background-image: url("/img/background-image-tablet@2x.jpg");
+    background-image: url("../img/background-image-tablet@2x.jpg");
     background-size: cover;
   }
 
   .webp .product__link--production {
-    background-image: url("/img/product-card-1-tablet@2x.webp");
+    background-image: url("../img/product-card-1-tablet@2x.webp");
   }
 
   .webp .product__link--mounting {
-    background-image: url("/img/product-card-2-tablet@2x.webp");
+    background-image: url("../img/product-card-2-tablet@2x.webp");
   }
 
   .webp .product__link--accessories {
-    background-image: url("/img/product-card-3-tablet@2x.webp");
+    background-image: url("../img/product-card-3-tablet@2x.webp");
   }
 
   .no-webp .product__link--production {
-    background-image: url("/img/product-card-1-tablet@2x.jpg");
+    background-image: url("../img/product-card-1-tablet@2x.jpg");
   }
 
   .no-webp .product__link--mounting {
-    background-image: url("/img/product-card-2-tablet@2x.jpg");
+    background-image: url("../img/product-card-2-tablet@2x.jpg");
   }
 
   .no-webp .product__link--accessories {
-    background-image: url("/img/product-card-3-tablet@2x.jpg");
+    background-image: url("../img/product-card-3-tablet@2x.jpg");
   }
 }
 
@@ -2324,11 +2324,11 @@ input[type=checkbox]:checked + span::after {
   }
 
   .webp .intro {
-    background-image: url("/img/background-image-mobile.webp");
+    background-image: url("../img/background-image-mobile.webp");
   }
 
   .no-webp .intro {
-    background-image: url("/img/background-image-mobile.jpg");
+    background-image: url("../img/background-image-mobile.jpg");
   }
 
   .intro__wrapper {
@@ -2479,27 +2479,27 @@ input[type=checkbox]:checked + span::after {
   }
 
   .webp .product__link--production {
-    background-image: url("/img/product-card-1-mobile.webp");
+    background-image: url("../img/product-card-1-mobile.webp");
   }
 
   .webp .product__link--mounting {
-    background-image: url("/img/product-card-2-mobile.webp");
+    background-image: url("../img/product-card-2-mobile.webp");
   }
 
   .webp .product__link--accessories {
-    background-image: url("/img/product-card-3-mobile.webp");
+    background-image: url("../img/product-card-3-mobile.webp");
   }
 
   .no-webp .product__link--production {
-    background-image: url("/img/product-card-1-mobile.jpg");
+    background-image: url("../img/product-card-1-mobile.jpg");
   }
 
   .no-webp .product__link--mounting {
-    background-image: url("/img/product-card-2-mobile.jpg");
+    background-image: url("../img/product-card-2-mobile.jpg");
   }
 
   .no-webp .product__link--accessories {
-    background-image: url("/img/product-card-3-mobile.jpg");
+    background-image: url("../img/product-card-3-mobile.jpg");
   }
 
   .product__text {
@@ -2744,37 +2744,37 @@ input[type=checkbox]:checked + span::after {
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .webp .intro {
-    background-image: url("/img/background-image-mobile@2x.webp");
+    background-image: url("../img/background-image-mobile@2x.webp");
     background-size: cover;
   }
 
   .no-webp .intro {
-    background-image: url("/img/background-image-mobile@2x.jpg");
+    background-image: url("../img/background-image-mobile@2x.jpg");
     background-size: cover;
   }
 
   .webp .product__link--production {
-    background-image: url("/img/product-card-1-mobile@2x.webp");
+    background-image: url("../img/product-card-1-mobile@2x.webp");
   }
 
   .webp .product__link--mounting {
-    background-image: url("/img/product-card-2-mobile@2x.webp");
+    background-image: url("../img/product-card-2-mobile@2x.webp");
   }
 
   .webp .product__link--accessories {
-    background-image: url("/img/product-card-3-mobile@2x.webp");
+    background-image: url("../img/product-card-3-mobile@2x.webp");
   }
 
   .no-webp .product__link--production {
-    background-image: url("/img/product-card-1-mobile@2x.jpg");
+    background-image: url("../img/product-card-1-mobile@2x.jpg");
   }
 
   .no-webp .product__link--mounting {
-    background-image: url("/img/product-card-2-mobile@2x.jpg");
+    background-image: url("../img/product-card-2-mobile@2x.jpg");
   }
 
   .no-webp .product__link--accessories {
-    background-image: url("/img/product-card-3-mobile@2x.jpg");
+    background-image: url("../img/product-card-3-mobile@2x.jpg");
   }
 }
 

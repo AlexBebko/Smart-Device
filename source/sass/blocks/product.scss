@@ -153,58 +153,58 @@
 
   .webp .product__link {
     &--production {
-      background-image: url("/img/product-card-1-tablet.webp");
+      background-image: url("../img/product-card-1-tablet.webp");
     }
 
     &--mounting {
-      background-image: url("/img/product-card-2-tablet.webp");
+      background-image: url("../img/product-card-2-tablet.webp");
     }
 
     &--accessories {
-      background-image: url("/img/product-card-3-tablet.webp");
+      background-image: url("../img/product-card-3-tablet.webp");
     }
 
 
     @media (min-resolution: $retina-dppx) {
       &--production {
-        background-image: url("/img/product-card-1-tablet@2x.webp");
+        background-image: url("../img/product-card-1-tablet@2x.webp");
       }
 
       &--mounting {
-        background-image: url("/img/product-card-2-tablet@2x.webp");
+        background-image: url("../img/product-card-2-tablet@2x.webp");
       }
 
       &--accessories {
-        background-image: url("/img/product-card-3-tablet@2x.webp");
+        background-image: url("../img/product-card-3-tablet@2x.webp");
       }
     }
   }
 
   .no-webp .product__link {
     &--production {
-      background-image: url("/img/product-card-1-tablet.jpg");
+      background-image: url("../img/product-card-1-tablet.jpg");
     }
 
     &--mounting {
-      background-image: url("/img/product-card-2-tablet.jpg");
+      background-image: url("../img/product-card-2-tablet.jpg");
     }
 
     &--accessories {
-      background-image: url("/img/product-card-3-tablet.jpg");
+      background-image: url("../img/product-card-3-tablet.jpg");
     }
 
 
     @media (min-resolution: $retina-dppx) {
       &--production {
-        background-image: url("/img/product-card-1-tablet@2x.jpg");
+        background-image: url("../img/product-card-1-tablet@2x.jpg");
       }
 
       &--mounting {
-        background-image: url("/img/product-card-2-tablet@2x.jpg");
+        background-image: url("../img/product-card-2-tablet@2x.jpg");
       }
 
       &--accessories {
-        background-image: url("/img/product-card-3-tablet@2x.jpg");
+        background-image: url("../img/product-card-3-tablet@2x.jpg");
       }
     }
   }
@@ -222,58 +222,58 @@
 
   .webp .product__link {
     &--production {
-      background-image: url("/img/product-card-1-mobile.webp");
+      background-image: url("../img/product-card-1-mobile.webp");
     }
 
     &--mounting {
-      background-image: url("/img/product-card-2-mobile.webp");
+      background-image: url("../img/product-card-2-mobile.webp");
     }
 
     &--accessories {
-      background-image: url("/img/product-card-3-mobile.webp");
+      background-image: url("../img/product-card-3-mobile.webp");
     }
 
 
     @media (min-resolution: $retina-dppx) {
       &--production {
-        background-image: url("/img/product-card-1-mobile@2x.webp");
+        background-image: url("../img/product-card-1-mobile@2x.webp");
       }
 
       &--mounting {
-        background-image: url("/img/product-card-2-mobile@2x.webp");
+        background-image: url("../img/product-card-2-mobile@2x.webp");
       }
 
       &--accessories {
-        background-image: url("/img/product-card-3-mobile@2x.webp");
+        background-image: url("../img/product-card-3-mobile@2x.webp");
       }
     }
   }
 
   .no-webp .product__link {
     &--production {
-      background-image: url("/img/product-card-1-mobile.jpg");
+      background-image: url("../img/product-card-1-mobile.jpg");
     }
 
     &--mounting {
-      background-image: url("/img/product-card-2-mobile.jpg");
+      background-image: url("../img/product-card-2-mobile.jpg");
     }
 
     &--accessories {
-      background-image: url("/img/product-card-3-mobile.jpg");
+      background-image: url("../img/product-card-3-mobile.jpg");
     }
 
 
     @media (min-resolution: $retina-dppx) {
       &--production {
-        background-image: url("/img/product-card-1-mobile@2x.jpg");
+        background-image: url("../img/product-card-1-mobile@2x.jpg");
       }
 
       &--mounting {
-        background-image: url("/img/product-card-2-mobile@2x.jpg");
+        background-image: url("../img/product-card-2-mobile@2x.jpg");
       }
 
       &--accessories {
-        background-image: url("/img/product-card-3-mobile@2x.jpg");
+        background-image: url("../img/product-card-3-mobile@2x.jpg");
       }
     }
   }
