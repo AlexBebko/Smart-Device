@@ -3,7 +3,7 @@
 }
 
 .products__wrapper {
-  width: 80%;
+  width: 90vw;
   max-width: 1220px;
   margin: 0 auto;
   padding-top: 64px;
@@ -18,8 +18,7 @@
   font-size: 36px;
   line-height: 51px;
   color: $color-default-white;
-  margin-bottom: 50px;
-  margin-left: -10px;
+  margin-bottom: 52px;
 }
 
 .products__title-text-mobile {
@@ -31,10 +30,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 650px;
   column-gap: 4.4vw;
+  row-gap: 10vh;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: -10px;
 }
 
 @media (max-width: $tablet-max-width) {

@@ -1,13 +1,13 @@
 .about__wrapper {
-  width: 80%;
+  width: 90%;
   max-width: 1220px;
   min-height: 320px;
   margin: 0 auto;
   margin-bottom: 100px;
-  padding-left: 242px;
+  padding-left: 250px;
   background-repeat: no-repeat;
   background-size: 150px 320px;
-  background-position: -8px top;
+  background-position: left top;
 }
 
 .webp .about__wrapper {
@@ -90,14 +90,15 @@
 
 @media (max-width: $tablet-max-width) {
   .about__wrapper {
+    width: 87%;
     min-width: 670px;
     margin-bottom: 80px;
-    padding-left: 180px;
-    background-position: -3px top;
+    padding-left: 175px;
+    background-position: -3px 5px;
   }
 
   .about__title {
-    margin-bottom: -10px;
+    margin-bottom: -6px;
   }
 
   .about__text p:last-child {

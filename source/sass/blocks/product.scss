@@ -40,58 +40,58 @@
 
 .webp .product__link {
   &--production {
-    background-image: url("/img/product-card-1.webp");
+    background-image: url("../img/product-card-1.webp");
   }
 
   &--mounting {
-    background-image: url("/img/product-card-2.webp");
+    background-image: url("../img/product-card-2.webp");
   }
 
   &--accessories {
-    background-image: url("/img/product-card-3.webp");
+    background-image: url("../img/product-card-3.webp");
   }
 
 
   @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
     &--production {
-      background-image: url("/img/product-card-1@2x.webp");
+      background-image: url("../img/product-card-1@2x.webp");
     }
 
     &--mounting {
-      background-image: url("/img/product-card-2@2x.webp");
+      background-image: url("../img/product-card-2@2x.webp");
     }
 
     &--accessories {
-      background-image: url("/img/product-card-3@2x.webp");
+      background-image: url("../img/product-card-3@2x.webp");
     }
   }
 }
 
 .no-webp .product__link {
   &--production {
-    background-image: url("/img/product-card-1.jpg");
+    background-image: url("../img/product-card-1.jpg");
   }
 
   &--mounting {
-    background-image: url("/img/product-card-2.jpg");
+    background-image: url("../img/product-card-2.jpg");
   }
 
   &--accessories {
-    background-image: url("/img/product-card-3.jpg");
+    background-image: url("../img/product-card-3.jpg");
   }
 
 
   @media (min-resolution: $retina-dppx) and (min-width: $vp-1024) {
     &--production {
-      background-image: url("/img/product-card-1@2x.jpg");
+      background-image: url("../img/product-card-1@2x.jpg");
     }
 
     &--mounting {
-      background-image: url("/img/product-card-2@2x.jpg");
+      background-image: url("../img/product-card-2@2x.jpg");
     }
 
     &--accessories {
-      background-image: url("/img/product-card-3@2x.jpg");
+      background-image: url("../img/product-card-3@2x.jpg");
     }
   }
 }

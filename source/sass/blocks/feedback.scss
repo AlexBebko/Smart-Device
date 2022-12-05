@@ -1,4 +1,5 @@
 .feedback {
+  min-height: 837px;
   background-color: $color-deep-sky-blue;
   background-image: url("../img/svg/polygon.svg");
   background-position: 0 0;
@@ -7,23 +8,25 @@
 }
 
 .feedback__container {
-  width: 80%;
+  width: 90vw;
   max-width: 1220px;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
   margin: 0 auto;
-  padding-top: 165px;
+  padding-top: 163px;
   padding-bottom: 248px;
+
+  @media (max-width: $vp-1280) {
+    grid-template-columns: 1fr 1.6fr;
+  }
 }
 
 .feedback__bg-image {
   margin: 0;
-  margin-top: 75px;
-  margin-right: 115px;
-  width: 510px;
-  height: 285px;
+  max-width: 510px;
   background-repeat: no-repeat;
-  background-position: 0 50%;
+  background-position: 0 55%;
   background-size: contain;
 }
 
@@ -45,7 +48,7 @@
 
 .feedback__wrapper {
   margin: 0;
-  width: 50%;
+  max-width: 100%;
 }
 
 .feedback__title {
@@ -72,12 +75,12 @@
 @media (max-width: $tablet-max-width) {
   .feedback {
     background-image: none;
+    min-height: 580px;
   }
 
   .feedback__container {
     width: 87vw;
     max-width: 670px;
-    min-height: 580px;
     padding-bottom: 125px;
     display: block;
     padding-top: 45px;
@@ -91,6 +94,7 @@
     width: 100%;
     min-width: 100%;
     padding: 0;
+    margin-left: 0;
   }
 
   .feedback__title {
@@ -103,10 +107,6 @@
 }
 
 @media (max-width: $mobile-max-width) {
-  .feedback {
-    border-bottom: 15px solid $color-bg-white;
-  }
-
   .feedback__container {
     width: 84vw;
     min-height: 750px;

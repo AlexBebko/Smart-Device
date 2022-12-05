@@ -42,6 +42,8 @@ function focusableModalWindow() {
   if (modalWindowElement) {
     let focusableElementsString = 'a[href], input:not([disabled]), textarea:not([disabled]), button:not([disabled]), [tabindex="0"]';
     let focusableElements = modalWindowElement.querySelectorAll(focusableElementsString);
+    let unfocusableElementsString = '[tabindex="-1"]';
+    let unfocusableElements = modalWindowElement.querySelectorAll(unfocusableElementsString);
 
     focusableElements = Array.prototype.slice.call(focusableElements);
 
@@ -59,6 +61,9 @@ function focusableModalWindow() {
           }
         } else {
           if (document.activeElement === lastTabStop) {
+            if (lastTabStop.focus()) {
+              unfocusableElements.tabIndex = 0;
+            }
             evt.preventDefault();
             firstTabStop.focus();
           }
